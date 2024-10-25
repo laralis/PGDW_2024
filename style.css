@@ -1,0 +1,253 @@
+:root {
+  font-size: 62.5%;
+  --text-primary: black;
+  --text-secondary: white;
+  --button-bg-1: black;
+  --paragraph-color: #1f1f1f;
+  --primary-color: #ff6c2e;
+  --bg-secondary: #d9d9d9;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Signika", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  padding: 2rem;
+}
+header .logo {
+  font-size: xx-large;
+  font-weight: 100;
+}
+header nav {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+}
+header nav a {
+  text-decoration: none;
+  color: var(--text-primary);
+  font-size: 2.4rem;
+}
+header button,
+main button {
+  color: var(--text-secondary);
+  background-color: var(--button-bg-1);
+  border-radius: 1.5rem;
+  font-size: 1.8rem;
+  padding: 1.4rem 2.4rem;
+  border: none;
+  cursor: pointer;
+}
+main .main_content {
+  width: 64.5rem;
+  padding: 2rem;
+}
+main h1 {
+  font-size: 6.4rem;
+  font-weight: bold;
+  margin-bottom: 1.6rem;
+}
+p {
+  opacity: 40%;
+}
+main p {
+  font-weight: 100;
+  font-size: 2.5rem;
+  color: var(--paragraph-color);
+  margin-bottom: 5.8rem;
+}
+main .social_media {
+  margin-top: 4.6rem;
+  display: flex;
+  gap: 4.5rem;
+}
+main .social_media a svg {
+  width: 3.6rem;
+}
+.first_section {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 4rem var(--paragraph-color) solid;
+}
+.first_section img {
+  width: 56.7rem;
+  height: 80rem;
+  position: absolute;
+  right: 10rem;
+}
+main .bg_banner {
+  background-color: var(--primary-color);
+  position: relative;
+  width: 50rem;
+  height: 80rem;
+}
+.second_section {
+  padding: 2rem;
+}
+.second_section h2 {
+  font-size: 6.3rem;
+  text-align: center;
+}
+.second_section p {
+  font-size: 2.4rem;
+  text-align: center;
+  color: var(--paragraph-color);
+}
+.second_section .cards_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6rem;
+}
+.cards_wrapper .card {
+  width: 35rem;
+}
+.cards_wrapper .card svg {
+  background-color: var(--button-bg-1);
+  border-radius: 100%;
+  padding: 0.8rem;
+}
+.cards_wrapper .card h4 {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.cards_wrapper .card p {
+  font-size: 1.8rem;
+  color: var(--paragraph-color);
+  text-align: start;
+}
+.inline {
+  display: flex;
+  justify-content: space-between;
+}
+.grid_images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid_images div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* PAGINA PERFIL */
+
+.profile {
+  padding: 10rem;
+  background-color: var(--bg-secondary);
+}
+.profile h2 {
+  font-size: 6.3rem;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 7rem;
+}
+.profile p {
+  font-size: 3rem;
+  color: var(--paragraph-color);
+  font-weight: 100;
+  width: 66rem;
+}
+section .images_board {
+  position: relative;
+  width: 45rem;
+  height: 60rem;
+}
+#main_img {
+  position: absolute;
+}
+#second_img {
+  position: absolute;
+  bottom: -15rem;
+  left: 30rem;
+}
+.sub_section_profile {
+  margin-top: 10rem;
+}
+.sub_section_profile h3 {
+  font-size: 5rem;
+  font-weight: normal;
+  opacity: 70%;
+}
+.sub_section_profile p {
+  font-size: 3rem;
+  font-weight: 100;
+}
+/* PAGINA PLANOS */
+
+.pricing {
+  padding-block: 8rem;
+  padding-inline: 2rem;
+}
+.pricing span {
+  font-size: 2.4rem;
+  opacity: 40%;
+  margin-bottom: 1.6rem;
+}
+.pricing h2 {
+  font-size: 6.3rem;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 4rem;
+}
+.pricing_cards {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+}
+.pricing_card {
+  box-shadow: 5px 6px 20px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 1.5rem;
+  width: 40rem;
+  height: 50rem;
+  padding: 2.4rem;
+}
+.pricing_card h3 {
+  opacity: 70%;
+  width: 600;
+  font-size: 1.7rem;
+}
+.pricing_card span {
+  opacity: 90%;
+  width: 600;
+  font-size: 4.8rem;
+}
+.pricing_card span span {
+  font-size: 1.7rem;
+}
+.pricing_card p {
+  font-size: 1.6rem;
+  opacity: 50%;
+  font-weight: 100;
+}
+.pricing_card .stats h4 {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1.6rem;
+  opacity: 60%;
+}
+
+.pricing_card .stats h4 svg {
+  background-color: var(--primary-color);
+  opacity: 40%;
+  border-radius: 100%;
+  padding: 0.4rem;
+}
+.pricing_card button {
+  width: 100%;
+  position: sticky;
+  bottom: 0px;
+}
+.space_between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
