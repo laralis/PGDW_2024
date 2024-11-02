@@ -12,15 +12,15 @@
     <link rel="stylesheet" href="style.css" />
     <title>InspireMove - Planos</title>
   </head>
-  <body>
+  <body data-page="planos">
     <header>
       <div class="logo">InspireMove</div>
       <nav>
         <a href="./index.html">Inicio</a>
         <a href="./perfis.html">Perfis</a>
-        <a href="./">Planos</a>
+        <a href="./planos.html">Planos</a>
       </nav>
-      <button type="button">Junte-se</button>
+      <button type="button" class="join_Button">Junte-se</button>
     </header>
     <main>
       <section class="pricing">
@@ -34,73 +34,74 @@
               Perfeito para quem está começando! Ideal para motivar seu
               progresso e manter o foco.
             </p>
-            <div class="space_between">
-              <div class="stats">
-                <h4>
-                  <svg
-                    width="12"
-                    height="12"
-                    viewBox="0 0 12 12"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M2.49902 7L3.70622 8.20719C4.00394 8.50491 4.48835 8.49928 4.77906 8.19472L9.49902 3.25"
-                      stroke="white"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                  Adicionar pessoas a sua rede
-                </h4>
-                <h4>
-                  <svg
-                    width="12"
-                    height="12"
-                    viewBox="0 0 12 12"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M2.49902 7L3.70622 8.20719C4.00394 8.50491 4.48835 8.49928 4.77906 8.19472L9.49902 3.25"
-                      stroke="white"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                  Particiar dos rankings mensais
-                </h4>
-                <h4>
-                  <svg
-                    width="12"
-                    height="12"
-                    viewBox="0 0 12 12"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M2.49902 7L3.70622 8.20719C4.00394 8.50491 4.48835 8.49928 4.77906 8.19472L9.49902 3.25"
-                      stroke="white"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                  Mostrar o seu progresso
-                </h4>
-              </div>
+
+            <div class="stats">
+              <h4>
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.49902 7L3.70622 8.20719C4.00394 8.50491 4.48835 8.49928 4.77906 8.19472L9.49902 3.25"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                Adicionar pessoas a sua rede
+              </h4>
+              <h4>
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.49902 7L3.70622 8.20719C4.00394 8.50491 4.48835 8.49928 4.77906 8.19472L9.49902 3.25"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                Particiar dos rankings mensais
+              </h4>
+              <h4>
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.49902 7L3.70622 8.20719C4.00394 8.50491 4.48835 8.49928 4.77906 8.19472L9.49902 3.25"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                Mostrar o seu progresso
+              </h4>
+            </div>
+            <div class="bottom_wrapper">
               <button>Assinar o plano</button>
             </div>
           </div>
           <div class="pricing_card">
-            <h3>Plano gratuíto</h3>
-            <span class="value">R$0 <span class="time"> / Mês </span></span>
+            <h3>Plano premium para personal trainers</h3>
+            <span class="value">R$20 <span class="time"> / Mês </span></span>
             <p>
-              Perfeito para quem está começando! Ideal para motivar seu
-              progresso e manter o foco.
+              Ideal para profissionais que desejam aumentar seus clientes.
             </p>
+
             <div class="stats">
               <h4>
                 <svg
@@ -193,15 +194,17 @@
                 Aparecer nas recomendações para perfis de alunos
               </h4>
             </div>
-            <button>Assinar o plano</button>
+            <div class="bottom_wrapper">
+              <button>Assinar o plano</button>
+            </div>
           </div>
           <div class="pricing_card">
-            <h3>Plano gratuíto</h3>
-            <span class="value">R$0 <span class="time"> / Mês </span></span>
+            <h3>Plano premium para alunos</h3>
+            <span class="value">R$10 <span class="time"> / Mês </span></span>
             <p>
-              Perfeito para quem está começando! Ideal para motivar seu
-              progresso e manter o foco.
+              Ideal para alunos que desejam encontrar um profissional alinhado aos seus objetivos
             </p>
+
             <div class="stats">
               <h4>
                 <svg
@@ -276,10 +279,13 @@
                 Encontrar um profissional alinhado ao seu objetivo
               </h4>
             </div>
-            <button>Assinar o plano</button>
+            <div class="bottom_wrapper">
+              <button>Assinar o plano</button>
+            </div>
           </div>
         </div>
       </section>
     </main>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>

@@ -12,20 +12,20 @@
     <link rel="stylesheet" href="style.css" />
     <title>InspireMove - Perfis</title>
   </head>
-  <body>
+  <body data-page="perfis">
     <header>
       <div class="logo">InspireMove</div>
       <nav>
         <a href="./index.html">Inicio</a>
-        <a href="./">Perfis</a>
+        <a href="./perfis.html">Perfis</a>
         <a href="./planos.html">Planos</a>
       </nav>
-      <button type="button">Junte-se</button>
+      <button type="button" class="join_Button">Junte-se</button>
     </header>
     <main>
       <section class="profile">
         <h2>Perfil de personal trainer</h2>
-        <div class="inline">
+        <div class="inline column">
           <div class="images_board">
             <img src="./assets/Img-4.png" alt="" id="main_img" />
             <img src="./assets/Img-5.png" alt="" id="second_img" />
@@ -40,8 +40,8 @@
             clientes.
           </p>
         </div>
-        <section class="inline sub_section_profile">
-          <div class="">
+        <section class="inline sub_section_profile column">
+          <div >
             <h3>Procurando por um personal trainer?</h3>
             <p>
               No perfil de aluno, você pode listar suas metas e preferências,
@@ -59,5 +59,6 @@
         </section>
       </section>
     </main>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>

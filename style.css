@@ -7,6 +7,18 @@
   --primary-color: #ff6c2e;
   --bg-secondary: #d9d9d9;
 }
+body[data-page="formulario"] {
+  background-color: rgb(230, 222, 214);
+}
+body[data-page="planos"] {
+  background-color: rgb(112, 153, 201);
+}
+body[data-page="perfis"] {
+  background-color: var(--bg-secondary);
+}
+body[data-page="main"] {
+  background-color: white;
+}
 body {
   font-size: 1.6rem;
   font-family: "Signika", sans-serif;
@@ -141,7 +153,6 @@ main .bg_banner {
 
 .profile {
   padding: 10rem;
-  background-color: var(--bg-secondary);
 }
 .profile h2 {
   font-size: 6.3rem;
@@ -201,13 +212,17 @@ section .images_board {
   display: flex;
   gap: 5rem;
   justify-content: center;
+  max-height: 80rem;
 }
 .pricing_card {
   box-shadow: 5px 6px 20px 0 rgba(0, 0, 0, 0.5);
   border-radius: 1.5rem;
   width: 40rem;
-  height: 50rem;
   padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--bg-secondary);
 }
 .pricing_card h3 {
   opacity: 70%;
@@ -243,11 +258,77 @@ section .images_board {
 }
 .pricing_card button {
   width: 100%;
-  position: sticky;
   bottom: 0px;
 }
 .space_between {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.bottom_wrapper {
+  margin-top: auto; /* Empurra a div para a parte inferior */
+}
+
+/* PAGINA FORMULARIO */
+.title_form {
+  font-size: 6rem;
+  margin: auto;
+  width: fit-content;
+  margin-top: 8rem;
+}
+form label {
+  font-size: 2.2rem;
+}
+form input {
+  width: 30rem;
+  border-radius: 1.2rem;
+  border: 2px solid var(--paragraph-color);
+  padding: 1rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: fit-content;
+  margin: auto;
+  padding-block: 8rem;
+}
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+form select {
+  width: 32rem;
+  font-size: 1.3rem;
+  border-radius: 1.2rem;
+  border: 2px solid var(--paragraph-color);
+  padding: 1rem;
+}
+form button {
+  font-size: 2rem;
+}
+#aceite {
+  width: 4rem;
+}
+.formulario div:last-of-type {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+@media (max-width: 1000px) {
+  .pricing_cards {
+    flex-direction: column;
+    max-height: none;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .column{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .bg_banner{
+    display: none;
+  }
 }
